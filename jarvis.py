@@ -101,17 +101,4 @@ if __name__ == "__main__":
                 
                 
     
-    for i in range(3):
-    a = input("Enter Password to open Jarvis :- ")
-    pw_file = open("password.txt","r")
-    pw = pw_file.read()
-    pw_file.close()
-    if (a==pw):
-        print("WELCOME SIR ! PLZ SPEAK [WAKE UP] TO LOAD ME UP")
-        break
-    elif (i==2 and a!=pw):
-        exit()
-
-    elif (a!=pw):
-        print("Try Again")
            
