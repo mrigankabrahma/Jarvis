@@ -5,7 +5,7 @@ import wikipedia
 import webbrowser
 import os
 import smtplib
-import PyAudio
+
 
 engine = pyttsx3.init('sapi5')
 
@@ -55,8 +55,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('sancharikar24@gmail.com', 'Sancharikar')
-    server.sendmail('sanchari719@gmail.com', to, content)
+    server.login('sancharizira@gmail.com', 'Jarviszira')
+    server.sendmail('sancharikar24@gmail.com', to, content)
     server.close()
     
 if __name__ == "__main__":
@@ -92,7 +92,7 @@ if __name__ == "__main__":
             try:
                 speak("What should I say?")
                 content = takeCommand()
-                to = "sancharikar24@gmail.com"    
+                to = "sancharizira@gmail.com"    
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
